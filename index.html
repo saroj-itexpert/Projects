@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Slider HTML & CSS </title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container swiper">
         <div class="wrapper">
-            <div class="card-list">
-                <div class="card">
+            <div class="card-list swiper-wrapper">
+                <div class="card swiper-slide">
                     <div class="card-image">
                         <img src="images/development.jpg" alt="development">
                         <p class="card-tag">Development</p>
@@ -39,9 +45,103 @@
 
                     </div>
                 </div>
+
+                <!-- Card 2 -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/design.jpg" alt="Design">
+                        <p class="card-tag">Design</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Best Design Frameworks</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima rem rerum,
+                            officia explicabo culpa laborum eos quasi, cupiditate cumque facilis dolores quia.
+                            Cupiditate qui recusandae odio saepe, ipsum minima suscipit?</p>
+                            <div class="card-footer">
+                                <div class="card-profile">
+                                    <img src="images/user-3.jpg" alt="User 2">
+                                    <div class="card-profile-info">
+                                        <span class="card-profile-name">
+                                            Paul Lawrence
+                                        </span>
+                                        <span class="card-profile-role">
+                                            Designer
+                                        </span>
+                                    </div>
+                                    <a href="#" class="card-button">Read More</a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/animation.jpg" alt="Animation">
+                        <p class="card-tag">Animation</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Best Animation Frameworks</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima rem rerum,
+                            officia explicabo culpa laborum eos quasi, cupiditate cumque facilis dolores quia.
+                            Cupiditate qui recusandae odio saepe, ipsum minima suscipit?</p>
+                            <div class="card-footer">
+                                <div class="card-profile">
+                                    <img src="images/user-4.jpg" alt="User 2">
+                                    <div class="card-profile-info">
+                                        <span class="card-profile-name">
+                                            Jake Smith
+                                        </span>
+                                        <span class="card-profile-role">
+                                            Animator
+                                        </span>
+                                    </div>
+                                    <a href="#" class="card-button">Read More</a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="images/productivity.jpg" alt="Productivity">
+                        <p class="card-tag">Productivity</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Best Productivity Frameworks</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima rem rerum,
+                            officia explicabo culpa laborum eos quasi, cupiditate cumque facilis dolores quia.
+                            Cupiditate qui recusandae odio saepe, ipsum minima suscipit?</p>
+                            <div class="card-footer">
+                                <div class="card-profile">
+                                    <img src="images/user-5.jpg" alt="User 2">
+                                    <div class="card-profile-info">
+                                        <span class="card-profile-name">
+                                            Robert Bucky
+                                        </span>
+                                        <span class="card-profile-role">
+                                            Product Owner
+                                        </span>
+                                    </div>
+                                    <a href="#" class="card-button">Read More</a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
             </div>
+            <!-- Pagination -->
+             <div class="swiper-pagination"></div>
+             <!-- Navigation Buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
         </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
